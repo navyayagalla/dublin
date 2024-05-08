@@ -1,0 +1,136 @@
+#skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 100px;
+}
+/* Resetting default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the text */
+section {
+    text-align: center;
+}
+/* Setting a default font and color */
+body {
+    font-family: "Sedan SC",
+    serif;
+    color: rgb(15, 49, 19);
+}
+
+/* Styling the navigation bar */
+header {
+    background-color: rgb(42, 114, 89);
+    padding: 20px;
+    color: #fff;
+    border: 2px solid rgb(20, 42, 28);
+    margin: auto;
+    text-align: center;
+}
+/* Styling the image captions */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* Horizontally centering the image */
+    align-items: center;
+    /* Vertically centering the image */
+    margin-bottom: 20px;
+    /* Adding some space between images */
+}
+
+
+header h1 {
+    margin: 0;
+    text-shadow: -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    border:rgb(15, 49, 19), 2px;
+    text-shadow: -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the main section */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-shadow: -0.5px -0.5px 0 rgb(255, 255, 255),
+    0.5px -0.5px 0 rgb(255, 255, 255),
+    -0.5px 0.5px 0 rgb(255, 255, 255),
+    0.5px 0.5px 0 rgb(255, 255, 255);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+
+/* Centering the images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Styling the footer */
+footer {
+    background-color: rgb(242, 133, 65);
+    color: rgb(5, 44, 11);
+    text-align: center;
+    padding: 20px;
+    text-shadow: -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
