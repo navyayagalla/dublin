@@ -1,0 +1,256 @@
+#skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 100px;
+    transition: 1s;
+}
+/* Resetting default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the text */
+section {
+    text-align: center;
+}
+/* Setting a default font and color */
+body {
+    font-family: "Sedan SC",
+    serif;
+    color: rgb(15, 49, 19);
+}
+main {
+    font-family: "Sedan SC",
+    serif;
+    color: rgb(15, 49, 19);
+}
+article {
+    font-family: "Sedan SC",
+        serif;
+    color: rgb(15, 49, 19);
+}
+.blog1, .blog2, .blog3, .blog4 {
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Styling the navigation bar */
+header {
+    background-color: rgb(42, 114, 89);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(20, 42, 28);
+    margin: auto;
+    text-align: center;
+}
+/* Styling the image captions */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* Horizontally centering the image */
+    align-items: center;
+    /* Vertically centering the image */
+    margin-bottom: 20px;
+    /* Adding some space between images */
+}
+
+
+header h1 {
+    margin: 0;
+    text-shadow: -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    border:rgb(15, 49, 19), 2px;
+    text-shadow: -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
+    width: 350px;
+    background: rgb(245, 148, 83);
+    transition: 0.5s;
+    border-radius: 5%;
+}
+
+/* Styling the navigation bar links */
+nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Styling the current page link */
+nav .nav-link.current-page {
+    background-color: #fff;
+    color: #333;
+    /* Text color for current page link */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+    padding: 5px 10px;
+    /* Optional: Add padding */
+}
+
+nav .nav-link.current-page:hover {
+    /* Optional: Hover styles for current page link */
+    background-color: #ddd;
+}
+/* Styling the main section */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-shadow: -0.5px -0.5px 0 rgb(255, 255, 255),
+    0.5px -0.5px 0 rgb(255, 255, 255),
+    -0.5px 0.5px 0 rgb(255, 255, 255),
+    0.5px 0.5px 0 rgb(255, 255, 255);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    display: flex;
+    /*border-radius: 5px;*/
+    margin: auto;
+    box-shadow:rgb(5, 57, 28);
+    filter: drop-shadow(rgb(5, 57, 28));
+    filter: sepia(0.3)
+}
+
+/* Centering the images */
+.image-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+}
+
+.image-grid img{
+    width: 80%;
+    border: solid rgb(30, 129, 51);
+    border-radius: 93% 7% 90% 10% / 8% 93% 7% 92%;
+}
+
+/* Styling the footer */
+footer {
+    background-color: rgb(175, 68, 1);
+    color: rgb(246, 232, 204);
+    text-align: center;
+    padding: 20px;
+    text-shadow: -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+        /* Disable smooth scrolling */
+    }
+
+    * {
+        transition: 0s !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background: rgb(5, 57, 28);
+        color: rgb(222, 193, 156);
+    }
+    nav a {
+        color: rgb(167, 96, 5);
+        
+    }
+
+    body {
+        background-color: rgb(222, 193, 156);
+        color: rgb(7, 46, 11);
+    }
+
+    section h2 {
+        margin-bottom: 20px;
+        text-shadow: -0.5px -0.5px 0 rgb(222, 193, 156),
+            0.5px -0.5px 0 rgb(222, 193, 156),
+            -0.5px 0.5px 0 rgb(255, 255, 255),
+            0.5px 0.5px 0 rgb(255, 255, 255);
+    }
+
+    footer {
+        background-color: rgb(138, 54, 1);
+        color: rgb(222, 193, 156);
+        text-align: center;
+        padding: 20px;
+        text-shadow: -0.5px -0.5px 0 #000,
+            0.5px -0.5px 0 #000,
+            -0.5px 0.5px 0 #000,
+            0.5px 0.5px 0 #000;
+    }
+}
+
+@media screen and (min-width: 760px){
+    .image-grid{
+        grid-template-columns: 45% 45%;
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 995px) {
+    .image-grid {
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
