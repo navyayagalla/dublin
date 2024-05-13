@@ -192,13 +192,13 @@ footer {
     flex-direction: column-reverse
 }
 
-.glenimages{
+.pageimages{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
-.glentext{
+.pagetext{
     padding: 20px;
 }
 
@@ -286,7 +286,7 @@ html {
     }
 }
 @media screen and (min-width: 300px) {
-    .glenimages {
+    .pageimages {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
