@@ -17,7 +17,8 @@ p,
 ul,
 li {
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Centering the text */
@@ -95,6 +96,7 @@ nav a {
     -0.5px 0.5px 0 #000,
     0.5px 0.5px 0 #000;
     padding: 7px;
+    margin-bottom: 5px;
 }
 
 nav a:hover {
@@ -126,7 +128,8 @@ nav a:hover {
 }
 /* Styling the main section */
 main {
-    padding: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 
 section {
@@ -169,7 +172,7 @@ img {
 .image-grid img{
     width: 80%;
     border: solid rgb(30, 129, 51);
-    border-radius: 93% 7% 90% 10% / 8% 93% 7% 92%;
+    /*border-radius: 93% 7% 90% 10% / 8% 93% 7% 92%;*/
 }
 
 /* Styling the footer */
@@ -186,19 +189,42 @@ footer {
 
 .blogposts{
     display: flex;
-    flex-flow: column-reverse;
+    flex-direction: column-reverse
+}
+
+.glenimages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.glentext{
+    padding: 20px;
+}
+
+figure {
+    float: right;
+    text-align: center;
+    font-size: smaller;
+    text-indent: 0;
+
+}
+
+figcaption {
+    padding-top: 5px;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 .sedan-sc-regular {
     font-family: "Sedan SC", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.images1, .images2, .images3, .images4 {
+.blogimages {
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
@@ -207,7 +233,7 @@ html {
     margin-bottom: 10px;
 }
 
-.images1 img, .images2 img, .images3 img, .images4 img {
+.blogimages img {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -257,6 +283,20 @@ html {
             0.5px -0.5px 0 #000,
             -0.5px 0.5px 0 #000,
             0.5px 0.5px 0 #000;
+    }
+}
+@media screen and (min-width: 300px) {
+    .glenimages {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogposts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
     }
 }
 
