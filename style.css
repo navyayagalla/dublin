@@ -1,3 +1,4 @@
+@charset 'utf-8';
 #skip{
     position: absolute;
     left: -500px;
@@ -16,11 +17,16 @@ p,
 ul,
 li {
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Centering the text */
 section {
+    text-align: center;
+}
+
+.title {
     text-align: center;
 }
 /* Setting a default font and color */
@@ -88,43 +94,42 @@ nav a {
     text-shadow: -0.5px -0.5px 0 #000,
     0.5px -0.5px 0 #000,
     -0.5px 0.5px 0 #000,
-    0.5px 0.5px 0 #000
+    0.5px 0.5px 0 #000;
+    padding: 7px;
+    margin-bottom: 5px;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color:rgb(255, 255, 255);
-    width: 350px;
     background: rgb(245, 148, 83);
     transition: 0.5s;
     border-radius: 5%;
+    color: rgb(226, 214, 214)
 }
 
-/* Styling the navigation bar links */
-nav .nav-link {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
+.current {
+    font-size: 27px;
+    font-weight: bold;
+    border-bottom: solid rgb(245, 148, 83);
+    text-shadow: -1px -1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+    color:#9ee29e;
+    display: inline-block;
 }
 
-/* Styling the current page link */
-nav .nav-link.current-page {
-    background-color: #fff;
-    color: #333;
-    /* Text color for current page link */
-    border-radius: 5px;
-    /* Optional: Add rounded corners */
-    padding: 5px 10px;
-    /* Optional: Add padding */
+.current::before {
+    content: "\2618";
 }
 
-nav .nav-link.current-page:hover {
-    /* Optional: Hover styles for current page link */
-    background-color: #ddd;
+.current::after {
+    content: "\2618";
 }
 /* Styling the main section */
 main {
-    padding: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 
 section {
@@ -167,7 +172,7 @@ img {
 .image-grid img{
     width: 80%;
     border: solid rgb(30, 129, 51);
-    border-radius: 93% 7% 90% 10% / 8% 93% 7% 92%;
+    /*border-radius: 93% 7% 90% 10% / 8% 93% 7% 92%;*/
 }
 
 /* Styling the footer */
@@ -184,19 +189,42 @@ footer {
 
 .blogposts{
     display: flex;
-    flex-flow: column-reverse;
+    flex-direction: column-reverse
+}
+
+.glenimages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.glentext{
+    padding: 20px;
+}
+
+figure {
+    float: right;
+    text-align: center;
+    font-size: smaller;
+    text-indent: 0;
+
+}
+
+figcaption {
+    padding-top: 5px;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 .sedan-sc-regular {
     font-family: "Sedan SC", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.images1, .images2, .images3 {
+.blogimages {
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
@@ -205,7 +233,7 @@ html {
     margin-bottom: 10px;
 }
 
-.images1 img, .images2 img, .images3 img {
+.blogimages img {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -255,6 +283,20 @@ html {
             0.5px -0.5px 0 #000,
             -0.5px 0.5px 0 #000,
             0.5px 0.5px 0 #000;
+    }
+}
+@media screen and (min-width: 300px) {
+    .glenimages {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogposts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
     }
 }
 
