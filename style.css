@@ -320,8 +320,12 @@ html {
             -0.5px 0.5px 0 #000,
             0.5px 0.5px 0 #000;
         margin-bottom: 5px;
-        margin: 10px;
+        margin: 15px;
     }
+}
+
+@media screen and (max-width: 600px) {
+
 }
 
 @media screen and (min-width: 780px){
