@@ -17,8 +17,8 @@ p,
 ul,
 li {
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Centering the text */
@@ -225,8 +225,8 @@ html {
 }
 
 .blogimages {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -286,7 +286,7 @@ html {
     }
 }
 @media screen and (min-width: 300px) {
-    .pageimages {
+    .pageimages, .blogimages {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -300,9 +300,22 @@ html {
     }
 }
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 780px){
+    .pageimages,
+    .blogimages {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blogposts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
     .image-grid{
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         justify-content: center;
         align-items: center;
