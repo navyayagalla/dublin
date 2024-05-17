@@ -6,6 +6,7 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/accordion.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,7 @@
     <header>
       <h1>Exploring Ireland: A Study Abroad Journey</h1>
       <nav>
-        <a href="index.html">About Us</a>
+        <a href="index.html">About</a>
         <a href="dublin.html">Dublin</a>
         <a class="glendalough" href="glendalough.html">Glendalough</a>
         <a href="kilkenny.html">Kilkenny</a>
@@ -37,7 +38,8 @@
       <div class="blogposts">
         <article class="blog">
           <h3>A Trip to the Countryside & Howth Cliffs</h3>
-          <b><time datetime="2024-05-07">May 6, 2024 ~ Monday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-07">May 6, 2024 ~ Monday</time></b></button>
+          <div class="panel">
           <p>
             Hooray for the first day of the trip! We went to
             <a href="https://www.visitdublin.com/howth-cliff-path-loop"
@@ -77,10 +79,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
+
         <article class="blog">
           <h3>Exploring Dublin: A City of History and Culture</h3>
-          <b><time datetime="2024-05-07">May 7, 2024 ~ Tuesday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-07">May 7, 2024 ~ Tuesday</time></b></button>
+          <div class="panel">
           <p>
             On this Tuesday, we had our first day of orientation for the CEA
             Capa program and went on a historic bus tour of Dublin! Our tour
@@ -135,11 +140,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>First Day of Class!</h3>
-          <b><time datetime="2024-05-07">May 8, 2024 ~ Wednesday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-07">May 8, 2024 ~ Wednesday</time></b></button>
+          <div class="panel">
           <p>
             SI 339 began today! We had our first class and created our website
             detailing our study abroad trip to Dublin, which you're on right now
@@ -179,6 +186,7 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
@@ -186,7 +194,8 @@
             Guest Lecture with Dr David Williams: Games, Engagement, and
             Accessibility
           </h3>
-          <b><time datetime="2024-05-09">May 9, 2024 ~ Thursday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 9, 2024 ~ Thursday</time></b></button>
+          <div class="panel">
           <p>
             In class today, we learned about flexbox, transitions, media
             queries, and responsive design. To apply these concepts, we played
@@ -241,11 +250,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>Visit to the EPIC Emigration Museum</h3>
-          <b><time datetime="2024-05-09">May 10, 2024 ~ Friday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 10, 2024 ~ Friday</time></b></button>
+          <div class="panel">
           <p>
             First Friday in Dublin! In class today we talked about responsive
             web design and accessibility in navigation. We updated our navbars
@@ -310,11 +321,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>Trip to Glendalough & Kilkenny</h3>
-          <b><time datetime="2024-05-09">May 11, 2024 ~ Saturday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 11, 2024 ~ Saturday</time></b></button>
+          <div class="panel">
           <p>
             Today our whole group went on a day trip to
             <a href="https://glendalough.ie/">Glendalough</a> &
@@ -388,11 +401,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>A Tour of Belfast & Northern Ireland</h3>
-          <b><time datetime="2024-05-09">May 12, 2024 ~ Sunday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 12, 2024 ~ Sunday</time></b></button>
+          <div class="panel">
           <p>
             On our free day, Sophie, Sarah, Lauren, Anastasia, and I decided to
             book a bus tour to
@@ -470,11 +485,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>Visit to the National Disability Authority of Ireland</h3>
-          <b><time datetime="2024-05-09">May 13, 2024 ~ Monday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 13, 2024 ~ Monday</time></b></button>
+          <div class="panel">
           <p>
             Today we finally got to experience some true Irish weather! It was
             rainy and a bit bleary for most of the day, but it got sunnier
@@ -528,11 +545,13 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>Afternoon Trip to the National Museum of History: Archaeology</h3>
-          <b><time datetime="2024-05-09">May 14, 2024 ~ Tuesday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 14, 2024 ~ Tuesday</time></b></button>
+          <div class="panel">
           <p>
             Today, we took advantage of the good weather, (and our newly topped-up Leap Cards), and took the DART train to <a href="https://bray.ie/">Bray, Ireland</a>! Bray is a coastal town south of Dublin that is known for it's amazing eateries and beautiful hiking. Sophie, Sarah, and I decided to do the <a href="https://bray.ie/bray-head-loop-trail/">Bray Head Loop Trail</a> , which is a 10km loop that goes through the mountains of Bray Head. Our hike started off on an interesting foot because the entry gate was shut, and stated that the Bray Head Cliff Walk was closed due to rockfalls. We opened the entry gate and decided to proceed with caution through the Bray Head Loop. We were rewarded with the incredible views pictured below, along with lots of fun animal sightings along the way! We saw cows grazing, a hawk sitting on a tree, many starlings, and some fun dogs. The starlings were also present at our lunch restaurant, <a href="https://www.themartello.ie/the-martello.html">The Martello</a>, and pounced on our food the second we got up from the table. Our waitress said they are omnipresent, and in her words, "They can't do anything about, even though they reign all over a woman, because they're endangered!" I can safely say that the hike was one of the prettiest hikes I've ever been on! The views from the top allowed us to see a 360 degree view of Bray Head and the surrounding town. The hills were coated with yellow flowers, and the rocky mountains were made from granite formations. Even the train ride there was along the water most of the time, so it was a day filled with breath-taking scenery.
           </p>
@@ -602,14 +621,14 @@
               alt="A bar's outdoor patio filled with young people"
               width="300"
             />
-
-            
+          </div>
           </div>
         </article>
 
         <article class="blog">
           <h3>Company Visit at Microsoft Ireland: EMEA Headquarters</h3>
-          <b><time datetime="2024-05-09">May 15, 2024 ~ Wednesday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 15, 2024 ~ Wednesday</time></b></button>
+          <div class="panel">
           <p>
             In class today, we reflected on our favorite things about Ireland so far, and then spent some time beefing up the content of our websites. After class, my mom's friend from college, Archana, brought me chicken biryani, so I got to have a taste of home for lunch! We relaxed for a bit during lunch and then went to the St. Stephen's Green station to take the <a href="https://www.luas.ie/">LUAS</a> tram to the <a href="https://www.microsoft.com/en-ie/aboutireland">Microsoft Ireland HQ</a>. The tram moved incredibly slow, but it was nice to see the different parts of Dublin further from when we live. At Microsoft, we got a tour of their office, which I've included some pictures from below. It was a beautiful (and MASSIVE) office, with lots of natural light from the circular ceiling skylights. After we got a tour of their various amenities such as a sleeping area, a yoga room, and a roof patio lounge, we went into the conference room to hear a presentation about AI. Victor and Linda, our tour guides, talked about Microsoft's history and the new AI projects they are investing in, such as Sora and Copilot. I'd never known how connected Microsoft and <a href="https://openai.com/">OpenAI</a> are, so it was interesting to hear about the various developments in AI and how that connects to Microsoft's role as a company. We learned about the details of the different models that OpenAI has created, such as GPT4, GPT4V, DALL-E, and Sora. Overall, I learned a lot more about AI and the developments that the future holds, and am excited to see where this technology goes in the next few years!
           </p>
@@ -638,40 +657,50 @@
               width="300"
             />
           </div>
+          </div>
         </article>
 
         <article class="blog">
           <h3>Tour of the Docklands with Dr. Darren Kelly</h3>
-          <b><time datetime="2024-05-09">May 16, 2024 ~ Thursday</time></b>
+          <button class="accordion"><b><time datetime="2024-05-09">May 16, 2024 ~ Thursday</time></b></button>
+          <div class="panel">
           <p>
+            We began learning JavaScript in class today, and played around with making some elements respond to events such as clicks or hovers. After class, I decided to explore some areas of Dublin I've been meaning to get to, one of which was <a href="https://georgesstreetarcade.ie/">George's Street Arcade</a>! It was a quaint little market inside a beautiful old building, and was home to many different kinds of knick-knack and art stores. I bought a few postcards to send to my friends and family, and then moved on to the antique & collectables store next door, which was called <a href="https://www.spottedbylocals.com/dublin/needful-things/">Needful Things</a>. I bought an old postcard there that showed <a href="https://www.graftonstreet.ie/">Grafton Street</a> before it was pedestrianized, which was a cool thing to see.
           </p>
           <p>
+            From there, I grabbed a quick coffee at <a href="https://shoelanecoffee.ie/">Shoe Lane Coffee</a>, and then headed to the <a href="https://heritageireland.ie/places-to-visit/custom-house-visitor-centre/">Custom House</a> to meet Dr. Darren Kelly for our tour of the <a href="https://www.dublindocklands.ie/">Docklands</a>. We learned all about Ireland's financial history and how quickly the development of the financial district has come about. I remember he compared the growth of Ireland's financial district to how quickly a flower blooms in a nature timelapse. He showed us some pictures from the 1990s and early 2000s where the buildings that currently exist weren't there at all. We also learned about the current housing crisis in Ireland, and how that connects to their economic history. 
+          </p>
+          <p>
+            After the Docklands tour, Lauren, Sophie, Sarah, Mari, and I went to dinner at a place called <a href="https://www.cafetopolis.com/">Cafe Topolis</a>, where we had some delicious Italian food which is pictured below. It was a long, slow dinner and it was nice to have a relaxed conversation with everyone after a busy day. On our way home, I saw a familiar face biking past me, and I realized it was someone I'd known from Michigan. He was originally from Ireland but was studying at Michigan for a while, but had moved back to Dublin after graduating. I called out after him and we had a little conversation about just how random it was that we'd ran into each other. I hadn't seen him in a long time so it was nice to catch up with him! Dublin is a big city, but he just happened to be biking past the street we were on. It felt like one of those beautiful small world moments. From there, we explored the nightlife of Dublin, and ended up at <a href="https://theworkmansclub.com/">The Workman's Club</a> for the night. 
           </p>
           <div class="blogimages">
             <img
-              src="blog2/rainleaves.jpg"
+              src="blog2/custom.jpg"
               alt=""
               width="300"
             />
             <img
-              src="blog2/heart.jpg"
+              src="blog2/docklands.JPG"
               alt=""
               width="300"
             />
             <img
-              src="blog2/guiness.jpg"
+              src="blog2/facebook.JPG"
               alt=""
               width="300"
             />
             <img
-              src="blog2/glass.JPG"
+              src="blog2/pasta.JPG"
               alt=""
               width="300"
             />
+          </div>
           </div>
         </article>
       </div>
       <!-- Add more articles for each blog post -->
     </main>
+    <script src="js/accordion.js">
+    </script>
   </body>
 </html>
