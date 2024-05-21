@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/favicon.png" />
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,92 +31,255 @@
       </nav>
     </header>
     <main id="main">
+        <h2 class="title">Dublin Statues</h2>
+        <div class="dublinimages">
+            <div class="statues">
+                <a
+                    href="blog2/wilde.JPG"
+                    
+                    data-lightbox="dublin"
+                    data-title="Oscar Wilde Statue: Merrion Square Park, Dublin"
+                    data-alt="A statue of Oscar Wilde lounging on top of a rock in Merrion Square park."
+                >
+                    <img class="statue1" src="blog2/wilde.JPG" alt="A statue of Oscar Wilde lounging on top of a rock in Merrion Square park." width="300">
+                </a>
+                <div class="statuetitle">
+                    <h2>Oscar Wilde Statue: Merrion Square Park, Dublin</h2>
+                    <p class="statuetext">This statue of Oscar Wilde lounging on a rock is located in Merrion Square Park, which is on the street where Oscar Wilde grew up. Oscar Wilde was an Irish poet and playwright, known best for his works "The Importance of Being Earnest" and "The Picture of Dorian Gray". The statue itself is life-sized, as Oscar Wilde was 6'3".His childhood home is located at 1 Merrion Square, and is now a tourist attraction. This sculpture was placed in the park in 1997 and was created by sculptor Danny Osborne. The statue is formed from granite, jade, and thulite, and was commissioned by the Guinness Ireland Group to commemorate the famous Irish author. In the statue, Oscar Wilde is wearing a Trinity College tie, which is a reference to his Alma Mater located close by.</p>
+                </div>
+            </div>
+            <div class="statues">
+                <div class="statuetitle">
+                    <h2>Molly Malone Statue: Suffolk Street, Dublin</h2>
+                    <p class="statuetext">Molly Malone was a fictional fishmonger who became a historical icon of Ireland. She is best known through the common Irish folk song "Molly Malone" (sometimes known as "Cockles and Mussels"), which details the life of the fishmonger before succumbing to the fever that eventually kills her. This song has been covered by many popular voices, such as The Dubliners and Joni Mitchell. The statue was placed on Grafton Street on June 13, 1988, which was then declared to be Molly Malone Day. It was then relocated to Suffolk Street in 2014, due to the tram track being placed in its original location. The statue is a lighter color in areas where it is frequently touched by tourists and visitors, which has led to locals criticizing the objectification of the statue. A campaign was started called Leave Molly mAlone to call attention to the misogyny associated with the tourist tradition of touching the statue.</p>
+                </div>
+                <a
+                    href="blog2/molly.JPG"
+                    data-lightbox="dublin"
+                    data-title="Molly Malone Statue: Suffolk Street, Dublin."
+                    data-alt="The Molly Malone statue, a brass statue of a woman wheeling a cart of fish."
+                >
+                    <img class="statue2" src="blog2/molly.JPG" alt="The Molly Malone statue, a brass statue of a woman wheeling a cart of fish." width="300">
+                </a>
+            </div>
+            <div class="statues">
+                <a
+                    href="images/index/famine.jpg"
+                    data-lightbox="dublin"
+                    data-title="The Famine Memorial: City Docklands, Dublin."
+                    data-alt="6 statues of starving people walking towards a famine ship."
+                >
+                    <img class="statue3" src="images/index/famine.jpg" alt="6 statues of starving people walking towards a famine ship." 
+                    width="300">
+                </a>
+                <div class="statuetitle">
+                    <h2>The Famine Memorial: City Docklands, Dublin.</h2>
+                    <p class="statuetext">These statues of famine victims can be found on Custom House Quay, in the Dublin City Docklands. The statues are large in height to emphasize the emaciated nature of the figures. The figures vary, some being men, children, and women, and one even representing a starved dog. They face towards the Dublin Docks, and the recreation of the famine ship that once docked there called the Jeanie Johnston. This is meant to represent the desperate journey that people made to the famine ship as a last resort before starvation. They would travel with their limited belongings to these so-called "coffin ships", as most of the people on board would die before reaching their destination. The famine memorial statues reference The Great Hunger of Ireland, the famine that led to the starvation and death of over 1 million people, and the emigration of another million. The famine was caused by the potato blight, which affected the staple crop of Irish agriculture. Ireland's entire population fell by 25% because of the famine. The statues were placed on Custom House Quay in 1997, and were designed by a sculptor from Dublin name Rowan Gillespie. </p>
+                </div>
+            </div>
+        </div>
+        
       <h2 class="title">Dublin BeReals</h2>
+      <p class="berealtext">BeReal is a social media app that provides its users with a 2 minute time range in which they can post a photo showing what they are currently doing at that time. It provides a real glimpse into people's lives, attempting to address the false nature of planned social media posts. It adds a sense of randomness to the idea of having a social media presence, so I decided to document my time in Dublin through BeReals. I took one every day, most of them on time, and they can be found below. You can click on the images to swap the photos, in the same way that the images can be interacted with on the BeReal app.</p>
     </main>
-    <div class="bereals">
-      <img class="bereal" id="brOne" src="bereals/brone1.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brTwo" src="bereals/brtwo2.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brThree" src="bereals/brthree2.JPG" onclick=changeImage(this) width="300">
+    <div class="bereals-grid">
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brOne" src="bereals/brone1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 6th, 2024</figcaption>
+        </figure>
 
-      <img class="bereal" id="brFour" src="bereals/brfour1.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brFive" src="bereals/brfive1.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brSix" src="bereals/brsix1.JPG" onclick=changeImage(this) width="300">
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brTwo" src="bereals/brtwo2.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 7th, 2024</figcaption>
+        </figure>
 
-      <img class="bereal" id="brSeven" src="bereals/brseven1.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brEight" src="bereals/breight1.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brNine" src="bereals/brnine1.JPG" onclick=changeImage(this) width="300">
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brThree" src="bereals/brthree2.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 8th, 2024</figcaption>
+        </figure>
 
-      <img class="bereal" id="brTen" src="bereals/brten1.JPG" onclick=changeImage(this) width="300">
-      <img class="bereal" id="brEleven" src="bereals/breleven1.jpg" onclick=changeImage(this) width="300">
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brFour" src="bereals/brfour1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 9th, 2024</figcaption>
+        </figure>
 
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brFive" src="bereals/brfive1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 10th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brSix" src="bereals/brsix1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 11th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brSeven" src="bereals/brseven1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 12th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brEight" src="bereals/breight1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 13th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brNine" src="bereals/brnine1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 14th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brTen" src="bereals/brten1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 15th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brEleven" src="bereals/breleven1.jpg" onclick=changeImage(this) width="300">
+            <figcaption>May 16th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brTwelve" src="bereals/brtwelve1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 17th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brThirteen" src="bereals/brthirteen1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 18th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brFourteen" src="bereals/brfourteen1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 19th, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="" id="brFifteen" src="bereals/brfifteen1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 20th, 2024</figcaption>
+        </figure>
     </div>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
     <script>
       function changeImage(element) {
             if (element.src.includes('bereals/brone1.JPG')) {
                 element.src = 'bereals/brone2.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brone2.JPG')){
                 element.src = 'bereals/brone1.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brtwo1.JPG')) {
                 element.src = 'bereals/brtwo2.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brtwo2.JPG')){
                 element.src = 'bereals/brtwo1.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brthree1.JPG')) {
                 element.src = 'bereals/brthree2.JPG';
+                element.alt = ""
             }
             else if(element.src.includes('bereals/brthree2.JPG')){
                 element.src = 'bereals/brthree1.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brfour1.JPG')) {
                 element.src = 'bereals/brfour2.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brfour2.JPG')) {
                 element.src = 'bereals/brfour1.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brfive1.JPG')){
                 element.src = 'bereals/brfive2.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brfive2.JPG')){
                 element.src = 'bereals/brfive1.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brsix1.JPG')){
                 element.src = 'bereals/brsix2.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brsix2.JPG')) {
                 element.src = 'bereals/brsix1.JPG';
+                element.alt = "";
             }
             else if (element.src.includes('bereals/brseven1.JPG')){
                 element.src = 'bereals/brseven2.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brseven2.JPG')){
                 element.src = 'bereals/brseven1.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/breight1.JPG')){
                 element.src = 'bereals/breight2.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/breight2.JPG')){
                 element.src = 'bereals/breight1.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brnine1.JPG')){
                 element.src = 'bereals/brnine2.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brnine2.JPG')){
                 element.src = 'bereals/brnine1.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brten1.JPG')){
                 element.src = 'bereals/brten2.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/brten2.JPG')){
                 element.src = 'bereals/brten1.JPG';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/breleven1.jpg')){
                 element.src = 'bereals/breleven2.jpg';
+                element.alt = "";
             }
             else if(element.src.includes('bereals/breleven2.jpg')){
                 element.src = 'bereals/breleven1.jpg';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brtwelve1.JPG')){
+                element.src = 'bereals/brtwelve2.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brtwelve2.JPG')){
+                element.src = 'bereals/brtwelve1.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brthirteen1.JPG')){
+                element.src = 'bereals/brthirteen2.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brthirteen2.JPG')){
+                element.src = 'bereals/brthirteen1.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brfourteen1.JPG')){
+                element.src = 'bereals/brfourteen2.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brfourteen2.JPG')){
+                element.src = 'bereals/brfourteen1.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brfifteen1.JPG')){
+                element.src = 'bereals/brfifteen2.JPG';
+                element.alt = "";
+            }
+            else if(element.src.includes('bereals/brfifteen2.JPG')){
+                element.src = 'bereals/brfifteen1.JPG';
+                element.alt = "";
             }
         }
     </script>
