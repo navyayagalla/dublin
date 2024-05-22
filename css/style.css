@@ -421,6 +421,8 @@ html {
         text-align: center;
         align-items: center;
         justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
         /* padding-left: 10px;
         padding-right: 10px; */
         /* Center-align text for better appearance on mobile */
