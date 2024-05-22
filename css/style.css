@@ -50,7 +50,8 @@ section {
 .statuetitle {
     flex: 1;
     padding: 50px;
-    padding-right: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
     /* Allow the title and text to take up remaining space */
 }
 
@@ -231,16 +232,14 @@ img {
     justify-content: center;
 }
 
-.abouttext{
-    padding-left: 40px;
-}
-
 #gallery {
     padding-bottom: 30px;
 }
 
 .berealtext{
     padding: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -265,7 +264,7 @@ img {
 
 .image-grid img{
     width: 80%;
-    border: solid rgb(30, 129, 51);
+    border: solid rgb(13, 75, 26);
     /*border-radius: 93% 7% 90% 10% / 8% 93% 7% 92%;*/
 }
 
@@ -422,13 +421,14 @@ html {
         text-align: center;
         align-items: center;
         justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
         /* Center-align text for better appearance on mobile */
     }
 
-    .aboutme img, #statue1, #statue2, #statue3 {
+    .aboutme img, #statue1, #statue2, #statue3, .statues img {
         margin-bottom: 20px;
+        width: 80%;
         /* Add space between the image and paragraph on mobile */
     }
     .statuetext {
