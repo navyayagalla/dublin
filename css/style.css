@@ -39,7 +39,7 @@ section {
     /* Fixed width for images */
     height: auto;
     /* Maintain aspect ratio */
-    padding: 50px;
+    padding: 40px;
     
 }
 
@@ -49,9 +49,9 @@ section {
 
 .statuetitle {
     flex: 1;
-    padding: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     /* Allow the title and text to take up remaining space */
 }
 
@@ -438,10 +438,10 @@ html {
         flex-wrap: wrap;
         width: auto;
     }
+    
     .aboutme p, .statuetext {
         padding-left: 10px;
         padding-right: 10px;
-        /* Add space between the image and paragraph on mobile */
     }
 }
 
