@@ -160,6 +160,21 @@
             <img class="bereal" alt="A small selfie of a woman in a pink shirt and sunglasses smiling, imposed onto a picture of a rose garden." id="brFifteen" src="bereals/brfifteen1.JPG" onclick=changeImage(this) width="300">
             <figcaption>May 20th, 2024</figcaption>
         </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="A small selfie of four students smiling at the camera imposed onto a picture of Dublin Castle set up for the Europa soccer league finals." id="brSixteen" src="bereals/brsixteen1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 21st, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="A small selfie of a student smiling imposed onto a picture of 2 other students of the DART, an Irish train with green seats." id="brSeventeen" src="bereals/brseventeen1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 22nd, 2024</figcaption>
+        </figure>
+
+        <figure class="bereals">
+            <img class="bereal" alt="A small selfie of two people smiling at the camera bathed in purple light, imposed onto a picture of a table in a dark bar with people sitting at it." id="brEighteen" src="bereals/breighteen1.JPG" onclick=changeImage(this) width="300">
+            <figcaption>May 23rd, 2024</figcaption>
+        </figure>
     </div>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
     <script>
@@ -283,6 +298,31 @@
             else if(element.src.includes('bereals/brfifteen2.JPG')){
                 element.src = 'bereals/brfifteen1.JPG';
                 element.alt = "A small selfie of a woman in a pink shirt and sunglasses smiling, imposed onto a picture of a rose garden.";
+            }
+            else if(element.src.includes('bereals/brsixteen1.JPG')){
+                element.src = 'bereals/brsixteen2.JPG';
+                element.alt = "A small image of Dublin Castle set up for the Europa soccer league finals, imposed onto a picture of four students smiling at the camera.";
+            }
+            else if(element.src.includes('bereals/brsixteen2.JPG')){
+                element.src = 'bereals/brsixteen1.JPG';
+                element.alt = "A small selfie of four students smiling at the camera imposed onto a picture of Dublin Castle set up for the Europa soccer league finals.";
+            }
+            else if(element.src.includes('bereals/brseventeen1.JPG')){
+                element.src = 'bereals/brseventeen2.JPG';
+                element.alt = "A small image of students sitting on green train seats on an Irish DART train imposed onto a selfie of a woman in a green sweater smiling.";
+            }
+            else if(element.src.includes('bereals/brseventeen2.JPG')){
+                element.src = 'bereals/brseventeen1.JPG';
+                element.alt = "A small selfie of a student smiling imposed onto a picture of 2 other students of the DART, an Irish train with green seats.";
+            }
+
+            else if(element.src.includes('bereals/breighteen1.JPG')){
+                element.src = 'bereals/breighteen2.JPG';
+                element.alt = "A small picture of a dark table at a bar surrounded by people, imposed onto a selfie of two people smiling at the camera, bathed in purple light.";
+            }
+            else if(element.src.includes('bereals/breighteen2.JPG')){
+                element.src = 'bereals/breighteen1.JPG';
+                element.alt = "A small selfie of two people smiling at the camera bathed in purple light, imposed onto a picture of a table in a dark bar with people sitting at it.";
             }
         }
     </script>
